@@ -1,0 +1,75 @@
+#create_List
+Room=["Karan", "Ram", "Naresh", "Vishwa"]
+for person in  Room:
+    print(person)
+print("\n")
+#modify_List
+Room[0]="Thamizh"
+for person in  Room:
+    print(person)
+print("\n")
+index=Room.index("Thamizh")
+Room[index]="Ashik"
+for person in  Room:
+    print(person)
+print("\n")
+#get_info Array(read)
+print("Total number of person in the room - ", len(Room), "\n")
+#insert_member
+Room.insert(0,"Thamizh")
+for person in  Room:
+    print(person)
+print("\n")
+#inert_randomly
+import random
+random_index=random.randint(0,len(Room))
+Room.insert(random_index,"Chokka")
+for person in  Room:
+    print(person)
+print("\n")
+#delete_element
+index=Room.index("Chokka")
+#d=del Room[index] #not possible since del has no return values
+del Room[index]
+for person in  Room:
+    print(person)
+print("\n")
+#pop
+index=Room.index("Ashik")
+a=Room.pop(index)
+for person in  Room:
+    print(person)
+print("\n")
+print(a + " was deleted")
+print("\n")
+#Remove
+Room.remove("Thamizh")
+for person in  Room:
+    print(person)
+print("\n")
+#insert
+Room.insert(3,"Naresh")
+for person in  Room:
+    print(person)
+print("\n")
+#delete_in_duplicated_list
+del Room[3]
+for person in  Room:
+    print(person)
+print("\n")
+#temporary_sort
+print(sorted(Room))
+for person in  Room:
+    print(person)
+print("\n")
+#permanent_sort
+Room.sort()
+print(Room)
+for person in  Room:
+    print(person)
+print("\n")
+#reverse
+Room.reverse()
+for person in  Room:
+    print(person)
+print("\n")
